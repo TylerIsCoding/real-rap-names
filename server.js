@@ -26,7 +26,6 @@ const rappers = {
 app.get('/', (request, response) => {
   // We heard a get request for '/' and now we're gonna send back a response. So let's send back a response with __dirname + index.html.
   response.sendFile(__dirname + '/index.html');
-  response.sendFile(__dirname + '/js/main.js');
 });
 
 // The /:rapperName is a query parameter. We can use request.params.rapperName to just return that parameter.
